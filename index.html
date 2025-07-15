@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListaLeve</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/png" href="assets/imagens/ChatGPT Image 15 de jul. de 2025, 11_43_31.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Lista De Tarefas</h1>
+    </header>
+
+    <main>
+        <h2>Feito para quem quer fazer</h2>
+
+        <div class="tarefas">
+            <label for="trfa" class="visually-hidden">Nova tarefa</label>
+            <div class="input-conteiner">
+                <input type="text" placeholder="Adicionar nova tarefa" id="trfa">
+                <button id="bot" type="button" aria-label="Adicionar nova tarefa">
+                    <img src="assets/imagens/icons8-mais.svg" width="25px" alt="sinal de mais para adicionar as tarefas">
+                </button>
+            </div>
+        </div>
+
+        <h3 id="msg">Tarefas</h3> 
+            <ul id="lista">
+                <!--<li> <input type="checkbox" placeholder="checkbox"> <span>Lavar os pratos</span></li> -->
+            </ul>
+
+        <div id="limpar">
+            <button type="button" id="limp">Limpar</button>
+        </div>
+    </main>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
