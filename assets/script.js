@@ -4,40 +4,44 @@ const botaoLimpar = document.getElementById('limpar');
 
 botaoLimpar.addEventListener('click', () => {
     lista.textContent = '';
-    localStorage.removeItem('tarefas');
 });
 
 botao.addEventListener('click', () => {
-    const li = document.createElement('li');
-
-    const input = document.createElement('input');
-    input.type = 'checkbox';
-
-    const span = document.createElement('span');
     const tarefa = document.getElementById('trfa').value;
-    span.textContent = tarefa;
     
-    const botaoLimparTarefa = document.createElement('button');
-    botaoLimparTarefa.className = 'remover';
+    if(tarefa !== '') {
+        const li = document.createElement('li');
 
-    const img = document.createElement('img');
-    img.src = 'assets/imagens/icons8-lixo.svg';
-    img.width = 40;
+        const input = document.createElement('input');
+        input.type = 'checkbox';
 
-    botaoLimparTarefa.appendChild(img);
+        const span = document.createElement('span');
+        span.textContent = tarefa;
+    
+        const botaoLimparTarefa = document.createElement('button');
+        botaoLimparTarefa.className = 'remover';
 
-    botaoLimparTarefa.addEventListener('click', () => {
-        li.remove();
-    })
+        const img = document.createElement('img');
+        img.src = 'assets/imagens/icons8-lixo.svg';
+        img.width = 40;
 
-    li.appendChild(input);
-    li.appendChild(span);
-    li.appendChild(botaoLimparTarefa);
+        botaoLimparTarefa.appendChild(img);
 
-    lista.appendChild(li);
+        botaoLimparTarefa.addEventListener('click', () => {
+            li.remove();
+        })
+
+        li.appendChild(input);
+        li.appendChild(span);
+        li.appendChild(botaoLimparTarefa);
+
+        lista.appendChild(li);
 
 
-    document.getElementById('trfa').value = '';
+        document.getElementById('trfa').value = '';
+    }else {
+        console.log('adicione uma tarefa válida');
+    }
 });
     
 
