@@ -24,7 +24,9 @@ Este projeto foi desenvolvido com o objetivo de praticar os fundamentos da progr
 - Organização de código em funções
 - Estruturação de um layout simples e responsivo
 
-## 💻 Veja o site aqui:
+## 💻 Teste o site aqui:
+
+https://mariannereissss.github.io/to-do-list/
 
 
 
