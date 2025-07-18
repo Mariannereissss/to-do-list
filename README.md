@@ -8,6 +8,8 @@ Uma aplicação simples de lista de tarefas feita com HTML, CSS e JavaScript. Id
 - Marcar tarefas como concluídas;
 - Remover tarefas da lista.
 
+- <img src="assets/imagens/Imagem do WhatsApp de 2025-07-17 à(s) 22.39.41_ffcc769b.jpg">
+
 
 ## 🧰 Tecnologias utilizadas
 
